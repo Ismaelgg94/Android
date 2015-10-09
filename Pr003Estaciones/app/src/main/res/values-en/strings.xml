@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pr003Seasons</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mnsjPrincipal">The four seasons</string>
+    <string name="invierno">I like winter</string>
+    <string name="otono">I like autumn</string>
+    <string name="primavera">I like spring</string>
+    <string name="verano">I like summer</string>
+    <string name="btnMensaje">I like it</string>
+    <string name= "mnsjEst">Seasons</string>
+    <string name= "inv">Winter</string>
+    <string name= "ver">Summer</string>
+    <string name= "oto">Autumn</string>
+    <string name="pri">Spring</string>
+</resources>

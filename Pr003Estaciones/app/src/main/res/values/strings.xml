@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pr003Estaciones</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mnsjPrincipal">Las cuatro estaciones</string>
+    <string name="invierno">Me gusta el invierno</string>
+    <string name="otono">Me gusta el otono</string>
+    <string name="primavera">Me gusta la primavera</string>
+    <string name="verano">Me gusta el verano</string>
+    <string name="btnMensaje">Me gusta</string>
+    <string name= "mnsjEst">Estaciones</string>
+    <string name= "inv">Invierno</string>
+    <string name= "ver">Verano</string>
+    <string name= "oto">Otono</string>
+    <string name="pri">Primavera</string>
+
+</resources>

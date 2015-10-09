@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lblPanel"
+        android:id="@+id/lblPanel"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/mgCabecera"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sclMensajes"
+        android:layout_below="@+id/lblPanel"
+        android:layout_above="@+id/llEnvio"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/lblTexto"
+
+            android:padding="@dimen/padMensajes"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llEnvio"
+        android:layout_alignParentBottom="true"
+        android:background="#D1C4E9"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtMensaje"
+            android:layout_weight="1"
+            android:hint="Mensaje"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgvEnviar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/iconoenviar"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/padlImagen"
+            android:clickable="true"
+           />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,278 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scvPrincipal"
+    tools:context=".MainActivity">
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llPrincipal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvCuenta"
+                    android:id="@+id/txvCuenta"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/euro"
+                    android:layout_toStartOf="@+id/euro">
+                </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etxCuenta"
+                    android:layout_below="@+id/txvCuenta"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/euro"
+                    android:inputType="numberDecimal"
+                    android:gravity="end">
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/euro"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    tools:text="€"
+                    android:layout_below="@+id/txvCuenta"
+                    android:layout_alignLeft="@+id/euro3"
+                    android:layout_alignStart="@+id/euro3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvPropPorc"
+                    android:id="@+id/txvPropPorc"
+                    android:layout_below="@+id/etxCuenta"
+                    android:layout_alignRight="@+id/btnLimpiar"
+                    android:layout_alignEnd="@+id/btnLimpiar">
+                </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etxPropPorc"
+                    android:layout_below="@+id/txvPropPorc"
+                    android:layout_alignRight="@+id/txvPropPorc"
+                    android:layout_alignEnd="@+id/txvPropPorc"
+                    android:layout_alignParentLeft="true"
+                    android:inputType="number"
+                    android:gravity="end">
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/porcentaje"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:text="%"
+                    android:layout_alignTop="@+id/etxPropPorc"
+                    android:layout_alignLeft="@+id/btnRedondear"
+                    android:layout_alignStart="@+id/btnRedondear" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvPropina"
+                    android:id="@+id/txvPropina"
+                    android:layout_above="@+id/etxPropina"
+                    android:layout_toLeftOf="@+id/euro2"
+                    android:layout_toStartOf="@+id/euro2">
+                </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etxPropina"
+                    android:layout_below="@+id/txvPropPorc"
+                    android:layout_toRightOf="@+id/porcentaje"
+                    android:layout_toEndOf="@+id/porcentaje"
+                    android:layout_alignRight="@+id/txvPropina"
+                    android:inputType="numberDecimal"
+                    android:gravity="end"
+                    android:focusable="false">
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/euro2"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    tools:text="€"
+                    android:layout_alignTop="@+id/etxPropina"
+                    android:layout_alignLeft="@+id/euro"
+                    android:layout_alignStart="@+id/euro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvTotal"
+                    android:text="@string/txvTotal"
+                    android:layout_below="@+id/etxPropina"
+                    android:layout_toLeftOf="@+id/euro3"
+                    android:layout_toStartOf="@+id/euro3" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etxTotal"
+                    android:layout_below="@+id/txvTotal"
+                    android:layout_alignRight="@+id/txvTotal"
+                    android:layout_alignEnd="@+id/txvTotal"
+                    android:layout_alignParentLeft="true"
+                    android:inputType="numberDecimal"
+                    android:gravity="end"
+                    android:focusable="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/euro3"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txvTotal"
+                    android:layout_margin="@dimen/margenEuro"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    tools:text="€" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCalcular"
+                    android:text="@string/btnCalcular"
+                    android:layout_alignRight="@+id/euro2"
+                    android:layout_below="@+id/etxTotal"
+                    style="@style/Base.TextAppearance.AppCompat.Button" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnRedondear"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnCalcular"
+                    android:layout_toStartOf="@+id/btnCalcular"
+                    android:id="@+id/btnRedondear" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnLimpiar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnRedondear"
+                    android:layout_toStartOf="@+id/btnRedondear"
+                    android:id="@+id/btnLimpiar" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvPorComensal"
+                    android:id="@+id/txvPorComensal"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/euro4"
+                    android:layout_toStartOf="@+id/euro4">
+                </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etxComensales"
+                    android:layout_below="@+id/txvPorComensal"
+                    android:layout_toLeftOf="@+id/btnRedondear2"
+                    android:layout_toStartOf="@+id/btnRedondear2"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="end"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvComensales"
+                    android:id="@+id/txvComensales"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/btnLimpiar2"
+                    android:layout_alignEnd="@+id/btnLimpiar2" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etxPorComensal"
+                    android:layout_alignTop="@+id/etxComensales"
+                    android:layout_toRightOf="@+id/etxComensales"
+                    android:layout_toEndOf="@+id/etxComensales"
+                    android:layout_alignRight="@+id/txvPorComensal"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:focusable="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/euro4"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    tools:text="€"
+                    android:layout_below="@+id/txvPorComensal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCalcular2"
+                    android:text="@string/btnCalcular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/etxComensales"
+                    android:layout_alignParentRight="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRedondear2"
+                    android:text="@string/btnRedondear"
+                    android:layout_toLeftOf="@+id/btnCalcular2"
+                    android:layout_alignParentBottom="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLimpiar2"
+                    android:text="@string/btnLimpiar"
+                    android:layout_toLeftOf="@+id/btnRedondear2"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

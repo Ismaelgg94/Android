@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PR004LinearLayout</string>
+
+    <string name="txtConexion">CONEXION</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtAceptar">Aceptar</string>
+    <string name="txtCancelar">Cancelar</string>
+    <string name="txtUsuario">Usuario</string>
+    <string name="txtvUsuario">Usuario</string>
+    <string name="txtClave">Clave</string>
+    <string name="txtvClave">Clave</string>
+    <string name="msjAceptar">Conectando con el usuario: </string>
+
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PR007CardView</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="txvCuenta">Cuenta</string>
+    <string name="txvPropina">Propina</string>
+    <string name="txvTotal">Total</string>
+    <string name="txvPropPorc">%Prop.</string>
+    <string name="txvComensales">Comensales</string>
+    <string name="txvPorComensal">Por Comensal</string>
+    <string name="btnLimpiar">Limpiar</string>
+    <string name="btnRedondear">Redondear</string>
+    <string name="btnCalcular">Calcular</string>
+</resources>

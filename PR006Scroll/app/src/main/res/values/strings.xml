@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PR006Scroll</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="lblPanel">Panel de mensajes</string>
+</resources>
